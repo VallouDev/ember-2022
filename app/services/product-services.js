@@ -2,8 +2,8 @@ import Service from '@ember/service';
 import { dProducts, dPromos } from 'tds/data/datas';
 
 export default class ProductServicesService extends Service {
-  Products = dProducts;
-  Promos = dPromos;
+  products = dProducts;
+  promos = dPromos;
 
   get activeServices() {
     return dProducts.filterBy('active', true);
