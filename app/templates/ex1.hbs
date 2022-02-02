@@ -1,13 +1,12 @@
 {{page-title "ex1"}}
 <h1>{{@model.nom}}</h1>
 <div class="card-body">
-  <Textarea class="form-control" @value={{this.content}}/>
+  <Textarea class="form-control" @value={{this.content}} maxlength="100"/>
 </div>
-<button type="button" id="save">Save</button>
+<button {{action "save" this.content}} type="button" id="save">Save</button>
 <button type="button" id="delete" {{on "click" this.clear}}>Delete</button>
-<button type="button" >clear</button>
 <h1>{{this.content}}</h1>
 <div class="je sais pas">
-  <p>Nombres de caractères restant :  {{this.size}}</p>
+  <p>Nombres de caractères restant :  {{this.nbrestant}}</p>
 </div>
 {{outlet}}

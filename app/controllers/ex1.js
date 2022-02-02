@@ -15,6 +15,10 @@ export default class Ex1Controller extends Controller {
     return this.MAX;
   }
 
+  get nbrestant() {
+    return this.MAX - this.content.length;
+  }
+
   @action
   clear() {
     this.clear;
