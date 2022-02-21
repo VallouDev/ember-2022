@@ -1,0 +1,9 @@
+{{page-title "TestNew"}}
+<ul>
+  {{#each @model as | contact |}}
+    <li>{{contact.name}}</li>
+  {{/each}}
+</ul>
+<Input @value={{this.name}}/>
+<button type="button" {{action "add" this.name}} > Clique FDP </button>
+{{outlet}}

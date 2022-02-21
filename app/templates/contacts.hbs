@@ -1,0 +1,15 @@
+{{page-title "Contacts"}}
+<ul>
+  {{#each @model as |contact | }}
+    <li>{{contact.name}}
+      <button {{action "delete" contact}}>Del FDP</button>
+    </li>
+
+  {{/each}}
+</ul>
+<Input @value= {{this.name}}/>
+<button type="button" {{action "add" this.name}}> Ajouter </button>
+{{#if @model.deleteCount}}
+  <button>Annuler ({{@model.deleteCount}})</button>
+{{/if}}
+{{outlet}}
