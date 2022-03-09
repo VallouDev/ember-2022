@@ -12,7 +12,7 @@ export default class CategoriesAddRoute extends Route {
   @action save(c) {
     let contact = this.store.createRecord('category', c);
     contact.save().then(() => {
-      this.router.transitionTo('categories');
+      this.router.transitionTo('categories.contacts');
     });
   }
 }
