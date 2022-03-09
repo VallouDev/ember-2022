@@ -2,7 +2,7 @@
 <ul>
   {{#each @model as |contact | }}
     <li>{{contact.name}}
-      <button {{action "delete" contact}}>Del FDP</button>
+      <button type="button" {{action "delete" contact}}>Del FDP</button>
     </li>
 
   {{/each}}
@@ -10,6 +10,6 @@
 <Input @value= {{this.name}}/>
 <button type="button" {{action "add" this.name}}> Ajouter </button>
 {{#if @model.deleteCount}}
-  <button>Annuler ({{@model.deleteCount}})</button>
+  <button type="button">Annuler ({{@model.deleteCount}})</button>
 {{/if}}
 {{outlet}}

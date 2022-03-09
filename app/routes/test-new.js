@@ -15,10 +15,10 @@ export default class TestNewRoute extends Route {
     c.save;
   }
 
-  @action delete(contact){
+  @action delete(contact) {
     contact.deleteRecord();
   }
-  @action cancelDeletion(contacts){
+  @action cancelDeletion(contacts) {
     contacts.each((c) => {
       c.rollbackAttributes();
     });
