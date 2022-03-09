@@ -7,10 +7,10 @@ export default class Router extends EmberRouter {
 }
 Router.map(function () {
   this.route('contacts-update');
-  this.route('categories',{ path: '/contact/:categoriesl' }), function () {
+  this.route('categories',{ path: '/contacts/:categoriesl' }), function () {
     this.route('add');
     this.route('update');
-    this.route('contacts',{ path: '/contact/:contactsl' }), function () {
+    this.route('contacts',{ path: '/contacts/:contactsl' }), function () {
       this.route('add');
       this.route('update');
     });
