@@ -1,56 +1,24 @@
-# tds
+# Bienvenue dans le dépot des TD de Programmation web -  Client Riche.
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Ce dépot github reprend tous les TD que nous avons réalisé avec le framework Ember.js.
 
-## Prerequisites
+Ember.js est un framework open-source JavaScript tourné vers les applications web. Il s'appuie sur une architecture de type MVC.
 
-You will need the following things properly installed on your computer.
+# Les différentes branches du TD 
 
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with npm)
-* [Ember CLI](https://ember-cli.com/)
-* [Google Chrome](https://google.com/chrome/)
+>1. Master (TD 0) 
+>2. Application Note (TD 1)
+>3. Choix de services (TD 2) 
+>4. Choix multiples (TD 3) 
+>5. Gestion de contacts(TD 4) 
+>6. Contacts (suite) (TD 5) 
+>7. Store (TD 6) 
+>8. Td noté (TD 7)
 
-## Installation
 
-* `git clone <repository-url>` this repository
-* `cd tds`
-* `npm install`
 
-## Running / Development
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
 
-### Code Generators
 
-Make use of the many generators for code, try `ember help generate` for more details
 
-### Running Tests
 
-* `ember test`
-* `ember test --server`
-
-### Linting
-
-* `npm run lint`
-* `npm run lint:fix`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
