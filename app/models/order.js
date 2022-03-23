@@ -13,4 +13,15 @@ export default class OrderModel extends Model {
   get count() {
     return this.orderdetails.length;
   }
+
+  get statut(){
+    if (this.status == 'created'){
+      return (this.status = '⌛');
+    }
+    if (this.status == 'prepared'){
+      return (this.status = '✔️ ');
+    }
+    return null;
+  }
+
 }

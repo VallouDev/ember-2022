@@ -10,4 +10,8 @@ Router.map(function () {
   this.route('employees');
   this.route('board');
   this.route('order', { path: 'order/:order_id' });
+
+  this.route('Order', function() {
+    this.route('idOrder');
+  });
 });
