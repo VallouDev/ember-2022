@@ -1,7 +1,18 @@
 {{page-title "Index"}}
 <form {{action "login" @model on="submit"}}>
-  <Input type="email" @value={{@model.email}} placeholder="Votre email" />
-  <Input type="password" @value={{@model.password}} placeholder="Votre mot de passe" />
+  <Input type="email" id ="mail" required @value={{@model.email}} placeholder="Votre email" />
+  <Input type="password" id="pwd" required @value={{@model.password}} placeholder="Votre mot de passe" />
   <button type="submit">Se connecter</button>
 </form>
+<script>
+  if ((document.getElementById(pwd) == '') || (document.getElementById(mail) == '') )
+  {
+    document.getElementById(pwd).disabled = true;
+    document.getElementById(mail).disabled = true;
+  }
+  else {
+    document.getElementById(pwd).disabled = false;
+    document.getElementById(mail).disabled = false;
+  }
+</script>
 {{outlet}}

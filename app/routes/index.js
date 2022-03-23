@@ -23,7 +23,12 @@ export default class IndexRoute extends Route {
           if (connected.password && connected.password === user.password) {
             this.userAuth.login(connected);
             this.transitionTo('board');
+          } else {
+            window.alert('Le mot de passe est mauvais.');
           }
+        }
+        else{
+          window.alert("L'identifiant est mauvais");
         }
       });
   }
