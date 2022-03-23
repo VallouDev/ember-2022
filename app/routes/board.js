@@ -16,6 +16,10 @@ export default class BoardRoute extends Abstractroute {
     }
   }
 
+  @action OnClick(){
+    this.transitionTo('order/:order_id');
+  }
+
   @action logout() {
     this.userAuth.logout();
     this.refresh();
