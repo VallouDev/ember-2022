@@ -1,3 +1,61 @@
 {{page-title "Order"}}
-<p> COUCOU</p>
-{{outlet}}
+<LinkTo @route="board">
+<button >Retour aux commandes à préparer</button>
+</LinkTo>
+
+
+<div>{{@model.user.name}} ({{@model.user.email}})</div>
+
+<div> {{@model.dateCreation}}</div>
+
+<div> </div>
+
+
+<table class = "ui celled table">
+  <thead>
+  <tr>
+    <th>Produit</th>
+    <th>Quantité</th>
+    <th>Prix</th>
+    <th>Montant</th>
+    <th>Préparation</th>
+  </tr>
+  </thead>
+<tbody>
+  {{#each @model.orderdetails as |detail|}}
+    <tr>
+      <th>{{detail.product}}</th>
+      <th>{{detail.quantity}}</th>
+      <th>{{detail.product.price}}</th>
+      <th>{{detail.amount}}</th>
+      <th>{{detail.prepared}}</th>
+    </tr>
+  {{/each}}
+</tbody>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>{{@model.amount}}</td>
+    <td>{{@model.toPay}}</td>
+  </tr>
+
+</table>
+
+<h1> Produits préparés ({{@model.quantity}})</h1>
+
+{{#each @model.orderdetails as |details|}}
+  <div>
+    {{details.product}}
+    <p> {{details.amount}} X {{details.quantity}}</p>
+  </div>
+
+{{/each}}
+
+
+<button >Valider pour {{@model.amount}}</button>
+
+
+
+
+  {{outlet}}
